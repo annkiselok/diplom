@@ -187,9 +187,9 @@ h3 span:after {
     margin-right: 25px;
 }
 
-.btn-download:first-child {
-    margin-right: 50px;
-}
+/*.btn-download:first-child {*/
+    /*margin-right: 50px;*/
+/*}*/
 
 
 
@@ -502,7 +502,7 @@ footer {
         font-size: 4em;
         margin-top: 0;
         margin-bottom: 300px;
-        padding-left: 60px;
+        padding-left: 70px;
         line-height: 1.2em;
     }
 
@@ -532,19 +532,27 @@ footer {
     }
 
     .header {
-        padding-bottom: 80px;
+        padding-bottom: 90px;
+        padding-top: 40px;
     }
 
     .header .logobox {
-        margin-bottom: 170px;
+        margin-bottom: 165px;
     }
 
     .header .h1-box {
         margin-bottom: 0px;
     }
 
+    .header_btn {
+        justify-content: space-evenly;
+        padding-left: 20px;
+    }
+
     .btn-download {
         font-size: .875em;
+        text-transform: uppercase;
+        line-height: 1.2em;
     }
 
     .logo_text {
@@ -553,52 +561,78 @@ footer {
 
     .athlets__preview {
         top: 65px;
-        left: -170px
+        left: -160px
     }
 
     .athlets_article .text {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         line-height: 1.4em;
+        letter-spacing: 1px;
     }
 
     .collaboration {
         padding-top: 15px;
     }
 
+    .collaboration .athlets_article .text {
+        line-height: 1.7em;
+        margin-bottom: 35px;
+    }
+
     .growth {
         padding-top: 15px;
     }
 
+    .growth .athlets_article .text {
+        line-height: 1.7em;
+        margin-bottom: 35px;
+    }
+
     .athlets_article {
         flex-wrap: wrap;
-        width: 63%;
+        width: 62%;
         margin-left: auto;
-        padding-right: 15px;
+        padding-right: 0;
     }
 
     .players {
         padding-top: 30px;
     }
 
+    .players h3 span {
+        margin-right: 5px;
+    }
+
     .players_article {
         flex-wrap: wrap;
         width: 60%;
         margin-right: auto;
-        padding-left: 25px;
+        padding-left: 20px
+    }
+
+    .players_article .text {
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        line-height: 1.7em;
     }
 
     .players__preview {
-        top: 0px;
-        right: -10px;
+        top: 10px;
+        right: -15px;
     }
 
     .players .collaboration {
+        padding-top: 20px;
         padding-bottom: 5px;
     }
 
+    .players .growth {
+        padding-bottom: 5px;
+    }
 
     footer {
-        padding-top: 130px;
+        padding-top: 125px;
+        padding-bottom: 25px;
     }
 
 }
@@ -620,7 +654,7 @@ footer {
     .find-contact .text_box__content,
     .work-it .text_box__content {
         max-width: 100%;
-        padding: 90px 25px 100px;
+        padding: 90px 25px 105px;
     }
     .find-contact .text_box {
         order: 2;
@@ -637,7 +671,7 @@ footer {
 
     .num-box,
     .find-contact .num-box {
-        left: 23px;
+        left: 30px;
         top: -72px;
         font-size: 1.5em;
         transform: translateY(0);
@@ -669,6 +703,12 @@ footer {
 
     .footer_btn {
         margin-bottom: 50px;
+        justify-content: space-evenly;
+        padding-left: 20px;
+    }
+
+    footer .btn-download:first-child {
+        margin-right: 0;
     }
 }
 
@@ -726,7 +766,7 @@ footer {
     }
 
     .header .h1-box {
-        margin-bottom: 90px;
+        margin-bottom: 85px;
     }
 
 
@@ -736,11 +776,12 @@ footer {
 
     .btn-download_text {
         margin-right: auto;
+        text-transform: uppercase;
     }
 
     .btn-download_icon {
-        margin-right: 15px;
-        margin-left: auto;
+        margin-right: 9px;
+        margin-left: initial;
     }
 
     .btn-download {
@@ -752,13 +793,13 @@ footer {
         padding: 5px 80px;
     }
 
+    .btn-download svg {
+        width: 25px;
+    }
+
     .btn-download:first-child {
         margin-right: 0;
         margin-bottom: 15px;
-    }
-
-    .btn-download svg {
-        width: 19px;
     }
 
     .athlets {
@@ -790,6 +831,7 @@ footer {
 
     h3 {
         font-size: 1.4375em;
+        letter-spacing: 1px;
     }
 
     .athlets_article .text {
@@ -809,27 +851,44 @@ footer {
     .players__preview._mobile {
         display: block;
         position: initial;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+        margin-top: 8px;
     }
 
     .players__preview._desctop {
         display: none;
     }
 
+    .players_article .text {
+        letter-spacing: 1px;
+    }
+
     .players .collaboration {
         padding-bottom: 5px;
+    }
+
+    .players .collaboration .players_article .text {
+        margin-bottom: 35px;
     }
 
     .players .growth {
         color: #c1c1c1;
         background-color: #5e42b0;
-        padding-top: 20px;
+        padding-top: 35px;
+    }
+
+    .players .growth .players_article .text {
+        margin-bottom: 50px;
+    }
+
+    .photo_content__preview, .photo_content__img {
+        min-height: 350px;
     }
 
     .num-box,
     .find-contact .num-box {
-        left: 10px;
-        top: -50px;
+        left: 15px;
+        top: -55px;
         font-size: 1em;
         width: 70px;
         height: 70px;
@@ -838,6 +897,7 @@ footer {
 
     .photo-box h2 {
         font-size: 1.75em;
+        margin-bottom: 15px;
     }
 
     .photo-box p {
@@ -847,7 +907,7 @@ footer {
 
     .text_box__content, .be-active .text_box__content, .find-contact .text_box__content, .work-it .text_box__content {
         max-width: 100%;
-        padding: 40px 10px 90px;
+        padding: 30px 10px 80px;
     }
 
     .footer {
@@ -855,9 +915,6 @@ footer {
         padding-bottom: 10px;
     }
 
-    .footer-logo {
-        margin-bottom: 50px;
-    }
 
     .slogan {
         margin-bottom: 75px;
@@ -874,13 +931,15 @@ footer {
     }
 
     .footer_btn {
-        margin-bottom: 85px;
+        margin-bottom: 80px;
+        padding-left: 0;
     }
 
     .footer-logo {
         width: 70px;
         height: 74px;
         line-height: 110px;
+        margin-bottom: 60px;
 
     }
 
